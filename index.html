@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Data Sage — AI-powered Desktop App for Data Analysis</title>
+  <meta name="description" content="Data Sage is an AI-powered desktop app for seamless data analysis. Upload CSV/Excel, clean data, visualize charts, run ML models, and chat with your data using local LLMs.">
+  <link rel="icon" href="logo.ico" sizes="any">
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta property="og:title" content="Data Sage — AI-powered Desktop App for Data Analysis">
+  <meta property="og:description" content="Install Data Sage to explore, clean, visualize and model your data with a friendly AI assistant running locally.">
+  <meta property="og:image" content="logo.png">
+  <meta property="og:type" content="website">
+</head>
+<body>
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <header class="site-header">
+    <a class="brand" href="#top">
+      <img src="logo.png" alt="Data Sage Logo" class="brand-logo" onerror="this.src='logo.ico'"/>
+      <span>Data Sage</span>
+    </a>
+    <nav class="nav">
+      <a href="#features">Features</a>
+      <a href="#install">Install</a>
+      <a href="#faq">FAQ</a>
+  <a class="btn primary small" href="https://drive.google.com/uc?export=download&id=1ONTLLmh5aYdEcdZwcJKIKOs5uqyQNMzu" target="_blank" rel="noopener">Download Setup</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-content">
+        <h1 class="reveal">Analyze data faster with an AI copilot</h1>
+        <p class="lead reveal delay-1">Data Sage is a simple Windows desktop app that loads your CSV/Excel, cleans and summarizes it, builds charts, detects anomalies, runs ML models, and lets you <strong>chat with your data</strong> using a local LLM.</p>
+        <div class="cta reveal delay-2">
+          <a class="btn primary" href="https://drive.google.com/uc?export=download&id=1ONTLLmh5aYdEcdZwcJKIKOs5uqyQNMzu" target="_blank" rel="noopener">Download</a>
+          <a class="btn ghost" href="#features">Explore features</a>
+        </div>
+        <p class="note reveal delay-3">Private by design. Runs locally with Ollama. No data leaves your machine.</p>
+      </div>
+
+      <div class="device reveal">
+        <div class="laptop">
+          <div class="bezel">
+            <div class="camera"></div>
+            <img src="Screenshot%202025-09-05%20152634.png" alt="Data Sage app screenshot" class="screen"/>
+          </div>
+          <div class="base"></div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="features" class="features section">
+      <h2 class="section-title reveal">What you get</h2>
+      <div class="grid">
+        <article class="card reveal">
+          <h3>One‑click desktop app</h3>
+          <p>Simple installer — no tech setup. The Python backend starts automatically.</p>
+        </article>
+        <article class="card reveal delay-1">
+          <h3>AI chat assistant</h3>
+          <p>Ask questions in natural language with local LLMs (Ollama). RAG for better answers.</p>
+        </article>
+        <article class="card reveal delay-2">
+          <h3>File import</h3>
+          <p>Drop CSV/Excel to explore instantly. Automatic type detection and preview.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Data cleaning</h3>
+          <p>Quick tools to handle missing values, fixes, and preprocessing.</p>
+        </article>
+        <article class="card reveal delay-1">
+          <h3>Charts & insights</h3>
+          <p>Custom and recommended charts to visualize your data beautifully.</p>
+        </article>
+        <article class="card reveal delay-2">
+          <h3>ML built-in</h3>
+          <p>Run anomaly detection and classic ML models without leaving the app.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="install" class="install section">
+      <h2 class="section-title reveal">Install & run</h2>
+      <ol class="steps">
+  <li class="reveal">Download the installer and run it: <a href="https://drive.google.com/uc?export=download&id=1ONTLLmh5aYdEcdZwcJKIKOs5uqyQNMzu" target="_blank" rel="noopener">Download ZIP</a></li>
+        <li class="reveal delay-1">Follow the prompts. On first launch, the app can install <strong>Ollama</strong> and pull the model <code>llama3.2:3b</code> if missing.</li>
+        <li class="reveal delay-2">Upload your CSV/XLSX and start asking questions about your data.</li>
+      </ol>
+
+      <div class="requirements">
+        <h3 class="reveal">Requirements</h3>
+        <ul>
+          <li class="reveal">Windows 10/11 (64-bit)</li>
+          <li class="reveal delay-1">Internet required on first run to download the LLM and dependencies</li>
+          <li class="reveal delay-2">Ollama for local LLMs (the app helps install)</li>
+        </ul>
+      </div>
+
+      <div class="cta center reveal">
+  <a class="btn primary large" href="https://drive.google.com/uc?export=download&id=1ONTLLmh5aYdEcdZwcJKIKOs5uqyQNMzu" target="_blank" rel="noopener">Download Data Sage</a>
+      </div>
+    </section>
+
+    <section class="privacy section">
+      <h2 class="section-title reveal">Privacy</h2>
+      <p class="reveal">All processing happens locally. No datasets are sent to external servers. The initial model download is the only network-heavy step.</p>
+    </section>
+
+    <section id="faq" class="faq section">
+      <h2 class="section-title reveal">FAQ</h2>
+      <details class="reveal">
+        <summary>Does it require Python or Node.js installed?</summary>
+        <p>The app bundles what it needs and can auto-install dependencies on first run.</p>
+      </details>
+      <details class="reveal">
+        <summary>Which LLM is used?</summary>
+        <p>By default, Data Sage uses local models via Ollama (e.g., <code>llama3.2:3b</code>).</p>
+      </details>
+      <details class="reveal">
+        <summary>Is it free?</summary>
+        <p>It's provided under Apache 2.0 license and offered as-is without warranty.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <div class="foot-brand">
+        <img src="logo.png" alt="Data Sage logo small" class="brand-logo" onerror="this.src='logo.ico'"/>
+        <span>Data Sage</span>
+      </div>
+      <div class="foot-actions">
+  <a class="btn primary small" href="https://drive.google.com/uc?export=download&id=1ONTLLmh5aYdEcdZwcJKIKOs5uqyQNMzu" target="_blank" rel="noopener">Download Setup</a>
+      </div>
+    </div>
+    <p class="legal">© <span id="year"></span> Data Sage • Apache 2.0 • Local-first analytics</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
